@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Client</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="resources/js/websocket.js"></script>
+</head>
+<body>
+
+<div>
+    <h1>WebSocket Client</h1>
+
+    <table>
+        <tr>
+            <td>Variable1 :</td>
+            <td><input type="text" id="var1"/><br></td>
+        </tr>
+        <tr>
+            <td>Variable2 :</td>
+            <td><input type="text" id="var2"/><br></td>
+        </tr>
+        <tr>
+            <td>Result :</td>
+            <td><input type="text" id="result" disabled/><br></td>
+        </tr>
+    </table>
+    <input type="button" class="button" value="Add" onclick=add() />
+    <input type="button" class="button" value="Subtract" onclick=subtract() />
+    <input type="button" class="button" value="Multiply" onclick=multiply() />
+    <input type="button" class="button" value="Divide" onclick=divide() />
+    <input type="button" class="button" value="Unsupported Operation" onclick=unsupported() />
+
+    <br />
+    <br />
+    <a href="trigger" target="_blank">Trigger message from server</a>
+</div>
+
+</body>
+</html>
